@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name" translatable="false">DogToy</string>
+    <string name="dog_toy" translatable="false">DOG*TOY</string>
+    <string name="game_with_me" translatable="false">Game with me!</string>
+    <string name="tip">Tip</string>
+    <string name="play_in_street">Play on the street</string>
+    <string name="play_in_home">Play at home</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_internet">No network</string>
+    <string name="precautionary_measures">Precautionary measures</string>
+    <string name="item">Item</string>
+    <string name="description">Эта игра вызывает у питомца чувство азарта, соревнования, поэтому, когда собака тянет на себя игрушку, она должна чувствовать, что и вы тянете ее в свою сторону. В противном случае ей быстро надоест. Будьте внимательны: перетягивание небезопасно для щенков, у которых еще не сформировалась челюсть, поскольку это может повредить зубы.</string>
+    <string name="details">Details</string>
+    <string name="home_text">Игрушки для собак должны быть сделаны из натуральных материалов. Особенно нужно избегать изделий из пластика, так как питомцы стирают о него зубы.</string>
+</resources>

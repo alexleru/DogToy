@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.ToyActivity">
+
+    <include
+        layout="@layout/button_back_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/button_back_home_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Example"
+        android:textColor="@color/blackLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name">
+
+        <include
+            android:id="@+id/description"
+            layout="@layout/text_for_toy_activity" />
+
+        <include
+            android:id="@+id/size"
+            layout="@layout/text_for_toy_activity" />
+
+        <include
+            android:id="@+id/branch"
+            layout="@layout/text_for_toy_activity" />
+
+        <include
+            android:id="@+id/producer_country"
+            layout="@layout/text_for_toy_activity" />
+
+        <include
+            android:id="@+id/weight"
+            layout="@layout/text_for_toy_activity" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageToy"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Layout"
+        tools:layout_editor_absoluteY="136dp" />
+
+</android.support.constraint.ConstraintLayout>

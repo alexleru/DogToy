@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeActivityBackground"
+    tools:context=".View.HomeActivity">
+
+    <ImageView
+        android:id="@+id/backgroundHomeTop"
+        android:layout_width="360dp"
+        android:layout_height="192dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tip"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="23dp"
+        android:fontFamily="@font/roboto"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/home_text"
+        android:textSize="14sp"
+        android:translationY="-1.01sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/round_corner_active_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundHomeTop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <ImageView
+                    android:id="@+id/imageForPlayInStreet"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/play_in_street" />
+
+                <ImageView
+                    android:id="@+id/attention1"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonForPlayOnStreet"
+                    app:layout_constraintStart_toEndOf="@+id/imageForPlayInStreet"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/private_info" />
+
+                <Button
+                    android:id="@+id/buttonForPlayOnStreet"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="124dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/round_corner_button"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/play_in_street"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageForPlayInHome"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/play_in_home" />
+
+                <ImageView
+                    android:id="@+id/attention2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonForPlayAtHome"
+                    app:layout_constraintStart_toEndOf="@+id/imageForPlayInHome"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/private_info" />
+
+                <Button
+                    android:id="@+id/buttonForPlayAtHome"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="124dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/round_corner_button"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/play_in_home"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageForFavourites"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/the_best_games" />
+
+                <TextView
+                    android:id="@+id/textCountFavourites"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_image_background_favourites"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonForFavourites"
+                    app:layout_constraintStart_toEndOf="@+id/imageForFavourites"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonForFavourites"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="124dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/round_corner_button"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/favorites"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

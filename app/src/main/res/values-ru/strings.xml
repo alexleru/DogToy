@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip">Полезный совет</string>
+    <string name="play_in_street">Игры на улице</string>
+    <string name="play_in_home">Игры дома</string>
+    <string name="favorites">Избранное</string>
+    <string name="no_internet">Нет сети</string>
+    <string name="precautionary_measures">Меры предосторожности</string>
+    <string name="item">Item</string>
+    <string name="description">Description</string>
+    <string name="details">Подробнее</string>
+    <string name="home_text">Игрушки для собак должны быть сделаны из натуральных материалов. Особенно нужно избегать изделий из пластика, так как питомцы стирают о него зубы.</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="startActivityBackground">#86C257</color>
+    <color name="startActivityTextBottom">#B9F197</color>
+    <color name="greenBackground">#BBDBA2</color>
+    <color name="homeActivityBackground">#bdccd4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="buttonBackground">#EA9A40</color>
+    <color name="buttonBack">#DDDDDD</color>
+    <color name="blackLight">#252525</color>
+    <color name="grey">#666666</color>
+    <color name="textButtonSubItem">#FFD3B3</color>
+    <color name="backgroundGames">#E1E2E0</color>
+    <color name="black_grey">#8D8B88</color>
+    <color name="grey_background">#E1E2E0</color>
+    <color name="red">#CFB399</color>
+</resources>
